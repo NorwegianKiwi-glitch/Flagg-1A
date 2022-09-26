@@ -1,20 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no-NB">
 <head>
-    <meta charset="UTF-8">
-    <title>Vietnam</title>
-</head>
-<body>
-    <h1 style="text-align:center">Vietnam flagg</h1>
+    <title>Canvas Vietnam Flagg</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge" />
     <style>
-        html {
-            background-color: bisque;
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+        #canvas {
+            background: #f0f0f0;
+            border-radius: 0px;
         }
     </style>
-    <canvas
-            id="canvas" width="1280"
-            height="853">
-    </canvas>
+</head>
+<body>
+<h1>Vietnam flagg</h1>
 
+<canvas id="canvas" width="640"
+        height="426"></canvas>
+
+<script>
+    const canvas =document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+
+    // bakgrunn
+    ctx.fillStyle = "rgb(218, 37, 29)";
+    ctx.fillRect(0,0,640, 426);
+    // stjerne
+    ctx.beginPath();
+    // 2-3
+    ctx.moveTo(320, 86);
+    ctx.lineTo(278, 170);
+    // 3-4
+    ctx.moveTo(278, 170);
+    ctx.lineTo(194, 170);
+    // 4-5
+    ctx.moveTo(194, 170);
+    ctx.lineTo(257, 233);
+    // 5-6
+    ctx.moveTo(257, 233);
+    ctx.lineTo(236, 317);
+    // 6-7
+    ctx.moveTo(236, 317);
+    ctx.lineTo(320, 275);
+    // 7-8
+    ctx.moveTo(320, 275);
+    ctx.lineTo(404, 317);
+    // 8-9
+    ctx.moveTo(404, 317);
+    ctx.lineTo(383, 233);
+    // 10-9
+    ctx.moveTo(446, 170);
+    ctx.lineTo(383, 233);
+    // 11-10
+    ctx.moveTo(362, 170);
+    ctx.lineTo(446, 170);
+    // 2-11
+    ctx.moveTo(320, 86);
+    ctx.lineTo(362, 170);
+
+    ctx.closePath();
+    ctx.stroke();
+    ctx.fillStyle = "rgb(255, 255, 0)";
+
+    ctx.fill();
+
+</script>
 </body>
 </html>
