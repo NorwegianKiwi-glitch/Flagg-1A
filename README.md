@@ -14,5 +14,8 @@ Vi brukte tilStroke og filStyle for å farge stjernen gul.
 Referanser:
     Vietnam flagg:
     Traversy Media. (2020, 7. Januar). _HTML5 Canvas API Crash Course_ YouTube. https://www.youtube.com/watch?v=gm1QtePAYTM 
+    
     Mozilla development network. (2022, 21. September). _Drawing shapes with canvas_ MDN. https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+    
     Thomas Zimmermann (2022, 9. September). _ctx.strokeStyle works, but not ctx.fillStyle without error message_. Stackoverflow https://stackoverflow.com/questions/73866758/ctx-strokestyle-works-but-not-ctx-fillstyle-without-error-message
+    
